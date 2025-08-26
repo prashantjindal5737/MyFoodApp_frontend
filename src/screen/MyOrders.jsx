@@ -9,7 +9,7 @@ const MyOrders = () => {
       try {
         const token = localStorage.getItem('authToken');
         if (!token) return;
-        const resp = await fetch('http://localhost:5000/orders/me', {
+        const resp = await fetch('https://myfoodapp-backend-1.onrender.com/orders/me', {
           headers: { Authorization: `Bearer ${token}` }
         });
         const json = await resp.json();

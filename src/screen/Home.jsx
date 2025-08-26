@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     (async () => {
       try {
-        const resp = await fetch("http://localhost:5000/displaydata", {
+        const resp = await fetch("https://myfoodapp-backend-1.onrender.com/displaydata", {
           method: 'POST',
         });
         const json = await resp.json();

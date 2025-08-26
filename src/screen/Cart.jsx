@@ -20,7 +20,7 @@ const Cart = () => {
       return navigate('/login');
     }
     try {
-      const resp = await fetch('http://localhost:5000/orders/', {
+      const resp = await fetch('https://myfoodapp-backend-1.onrender.com/orders/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

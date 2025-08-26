@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    const resp = await fetch("http://localhost:5000/login", {
+    const resp = await fetch("https://myfoodapp-backend-1.onrender.com/login", {
       method: 'POST', headers: {"Content-Type":"application/json"}, body: JSON.stringify(data)
     });
     const json = await resp.json();
