@@ -1,0 +1,48 @@
+.navbarmain {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: #ff6b6b;
+  color: white;
+  gap: 15px;
+}
+
+.title1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+input[type="text"] {
+  flex: 1;
+  max-width: 300px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn {
+  background: white;
+  color: #ff6b6b;
+  border: none;
+  margin: 0 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .navbarmain {
+    flex-wrap: wrap;
+  }
+  input[type="text"] {
+    flex: 100%;
+    margin-top: 10px;
+  }
+}
